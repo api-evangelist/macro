@@ -1,7 +1,12 @@
 aid: macro
 name: Macro
-description: Macro is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Macro is an all-in-one, keyboard-first work operating system that unifies email,
+  team messages, documents, tasks, calls, agents, GitHub pull requests and CRM into a
+  single fast database, linked together by @mentions and a shared AI memory. Backed by
+  a16z and built in the open (AGPLv3, github.com/macro-inc/macro), Macro runs on AWS,
+  is SOC 2 Type II audited, and exposes an official hosted Model Context Protocol (MCP)
+  server so AI clients can search, read and act across a connected workspace.
 url: https://raw.githubusercontent.com/api-evangelist/macro/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +14,104 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/65687018?v=4
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Productivity
+- Email
+- Collaboration
+- Workspace
+- CRM
+- Tasks
+- AI Agents
+- MCP
+- Open Source
+apis:
+- name: Macro MCP Server
+  description: >-
+    Official hosted (remote) Model Context Protocol server for Macro. Connects AI
+    clients over OAuth to search, read and act across a Macro workspace — email,
+    messages, tasks, docs, threads, entities and CRM.
+  humanURL: https://docs.macro.com/AI/mcp/overview.md
+  baseURL: https://mcp-server.macro.com/mcp
+  tags:
+  - MCP
+  - AI Agents
+  - Productivity
+  properties:
+  - type: MCPServer
+    url: mcp/macro-mcp.yml
+  - type: Documentation
+    url: https://docs.macro.com/AI/mcp/overview.md
+  - type: APIReference
+    url: https://docs.macro.com/AI/mcp/tools/index.md
+  - type: Authentication
+    url: authentication/macro-authentication.yml
+  - type: Conventions
+    url: conventions/macro-conventions.yml
+  - type: DataModel
+    url: data-model/macro-data-model.yml
+common:
+- type: DomainSecurity
+  url: security/macro-domain-security.yml
+- type: DeveloperPortal
+  url: https://docs.macro.com
+- type: Documentation
+  url: https://docs.macro.com
+- type: APIReference
+  url: https://docs.macro.com/AI/mcp/tools/index.md
+- type: GettingStarted
+  url: https://docs.macro.com/getting-started.md
+- type: Support
+  url: https://docs.macro.com/support.md
+- type: Pricing
+  url: https://docs.macro.com/account/billing.md
+- type: GitHubOrganization
+  url: https://github.com/macro-inc
+- type: ChangeLog
+  url: changelog/macro-changelog.yml
+- type: MCPServer
+  url: mcp/macro-mcp.yml
+- type: LLMsTxt
+  url: llms/macro-llms.txt
+- type: Authentication
+  url: authentication/macro-authentication.yml
+- type: Conventions
+  url: conventions/macro-conventions.yml
+- type: Lifecycle
+  url: lifecycle/macro-lifecycle.yml
+- type: DataModel
+  url: data-model/macro-data-model.yml
+- type: Conformance
+  url: conformance/macro-conformance.yml
+- type: Compliance
+  url: conformance/macro-conformance.yml
+- type: TrustCenter
+  url: security/macro-trust-center.yml
+- type: AgentSkill
+  url: skills/_index.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1
