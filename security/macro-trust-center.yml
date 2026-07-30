@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.macro.com/faq.md
+name: Macro Trust & Compliance
+type: TrustCenter
+description: >-
+  Security and compliance posture published by Macro. No dedicated trust.macro.com
+  portal was found; details are drawn from the public FAQ and homepage.
+docs: https://docs.macro.com/faq.md
+certifications:
+- name: SOC 2 Type II
+  status: audited
+  source: https://docs.macro.com/faq.md
+infrastructure:
+  cloud: AWS
+data_posture:
+  statement: >-
+    Macro states it is "not interested in your data" and markets "zero data retention";
+    directs users to its privacy policy and terms of service for specifics.
+  self_host: >-
+    Permitted under AGPLv3; the team plans to improve self-hosting later in 2026. For
+    HIPAA/FedRAMP compliance needs, contact self-host@macro.com.
+contacts:
+  compliance: self-host@macro.com
+  licensing: licensing@macro.com

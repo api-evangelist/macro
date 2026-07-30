@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.macro.com/AI/mcp/overview.md + docs.macro.com concepts
+name: Macro API Conventions
+type: Conventions
+description: >-
+  Cross-cutting conventions for programmatically working with Macro. Macro's agent-facing
+  surface is a hosted MCP server (not a REST API), so conventions are expressed in MCP
+  terms: OAuth connect, entity/property access, and @mention linking.
+auth:
+  style: oauth2
+  detail: Browser OAuth sign-in on MCP client connect; see authentication/macro-authentication.yml
+entities:
+  access: >-
+    Entities (documents, tasks, emails, threads, CRM records) are enumerated with
+    ListEntities and read via ReadContent/ReadMetadata; structured fields via
+    GetEntityProperties / SetEntityProperty.
+  linking: >-
+    The @mention primitive links any entity to any other across every markdown surface;
+    permissions flow from channel membership rather than per-object ACLs.
+search:
+  tools: [ContentSearch, NameSearch]
+  detail: Unified search across email, tasks, docs, call transcripts, agents and files (<50ms target).
+properties:
+  detail: One shared Properties system attaches structured fields to any entity type.
+idempotency:
+  supported: false
+  notes: No idempotency-key convention is documented for MCP write tools (SendEmail, CreateDocument, SetEntityProperty).
+pagination:
+  documented: false
+versioning:
+  scheme: calver (vYYYY.M.D.patch); see lifecycle/macro-lifecycle.yml
+error_envelope:
+  documented: false
+  notes: MCP tools surface errors via the MCP protocol; no public problem+json catalog.
+cross_links:
+  authentication: authentication/macro-authentication.yml
+  lifecycle: lifecycle/macro-lifecycle.yml
+  mcp: mcp/macro-mcp.yml
+  data_model: data-model/macro-data-model.yml

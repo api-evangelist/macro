@@ -1,0 +1,64 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.macro.com/AI/mcp/overview.md
+name: Macro MCP Server
+type: MCPServer
+status: official
+description: >-
+  Official hosted (remote) MCP server for Macro, the unified interface for email,
+  messages, tasks, calls, agents, pull requests, docs and CRM linked together with
+  shared AI memory. Lets AI clients read and act across a connected Macro workspace.
+endpoint: https://mcp-server.macro.com/mcp
+transport: http
+authentication:
+  type: oauth2
+  flow: browser
+  notes: >-
+    Authentication happens through Macro's OAuth flow when the client connects; the
+    user completes a browser sign-in during the initial connection. MCP access is
+    included on all Macro plans, including the free plan.
+docs: https://docs.macro.com/AI/mcp/overview.md
+tool_reference: https://docs.macro.com/AI/mcp/tools/index.md
+install:
+  claude_code: claude mcp add --transport http macro https://mcp-server.macro.com/mcp
+  codex_cli: codex mcp add macro --url https://mcp-server.macro.com/mcp
+  json_config: |
+    {
+      "macro": {
+        "type": "http",
+        "url": "https://mcp-server.macro.com/mcp"
+      }
+    }
+tools:
+- name: ContentSearch
+  docs: https://docs.macro.com/AI/mcp/tools/content-search.md
+- name: NameSearch
+  docs: https://docs.macro.com/AI/mcp/tools/name-search.md
+- name: ListEntities
+  docs: https://docs.macro.com/AI/mcp/tools/list-entities.md
+- name: GetEntityProperties
+  docs: https://docs.macro.com/AI/mcp/tools/get-entity-properties.md
+- name: SetEntityProperty
+  docs: https://docs.macro.com/AI/mcp/tools/set-entity-property.md
+- name: ReadContent
+  docs: https://docs.macro.com/AI/mcp/tools/read-content.md
+- name: ReadMetadata
+  docs: https://docs.macro.com/AI/mcp/tools/read-metadata.md
+- name: CreateDocument
+  docs: https://docs.macro.com/AI/mcp/tools/create-document.md
+- name: GetThread
+  docs: https://docs.macro.com/AI/mcp/tools/get-thread.md
+- name: ReadThread
+  docs: https://docs.macro.com/AI/mcp/tools/read-thread.md
+- name: UpdateThreadLabels
+  docs: https://docs.macro.com/AI/mcp/tools/update-thread-labels.md
+- name: SendEmail
+  docs: https://docs.macro.com/AI/mcp/tools/send-email.md
+- name: web_fetch
+  docs: https://docs.macro.com/AI/mcp/tools/web-fetch.md
+- name: web_search
+  docs: https://docs.macro.com/AI/mcp/tools/web-search.md
+- name: bash_code_execution
+  docs: https://docs.macro.com/AI/mcp/tools/bash-code-execution.md
+- name: text_editor_code_execution
+  docs: https://docs.macro.com/AI/mcp/tools/text-editor-code-execution.md

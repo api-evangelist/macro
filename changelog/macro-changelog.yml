@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.macro.com/changelog/introduction.md
+name: Macro Changelog
+type: ChangeLog
+description: >-
+  Dated release notes for Macro, pulled from GitHub Releases at macro-inc/macro.
+docs: https://docs.macro.com/changelog/introduction.md
+releases: https://github.com/macro-inc/macro/releases
+scheme: calver
+version_format: vYYYY.M.D.patch
+current_version: v2026.6.9.0
+cadence: near-daily releases, grouped by month
+recent_months:
+- month: '2026-05'
+  url: https://docs.macro.com/changelog/2026-05.md
+  latest: v2026.5.28.0
+- month: '2026-04'
+  url: https://docs.macro.com/changelog/2026-04.md
+  latest: v2026.4.30.0
+- month: '2026-03'
+  url: https://docs.macro.com/changelog/2026-03.md
+  latest: v2026.3.31.1
+- month: '2026-02'
+  url: https://docs.macro.com/changelog/2026-02.md
+- month: '2026-01'
+  url: https://docs.macro.com/changelog/2026-01.md
+- month: '2025-12'
+  url: https://docs.macro.com/changelog/2025-12.md
+notes: >-
+  Entries are auto-generated from GitHub Releases with per-PR bullet lists (feat/fix/chore
+  prefixes). Open-sourced under AGPLv3 as of 2026-05-31, so release history is public.

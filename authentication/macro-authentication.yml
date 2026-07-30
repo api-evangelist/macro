@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.macro.com/AI/mcp/overview.md
+name: Macro Authentication
+type: Authentication
+description: >-
+  How programmatic clients authenticate to Macro. Macro's public programmatic surface
+  is its hosted MCP server; clients authenticate with OAuth via a browser sign-in when
+  the MCP client first connects. There is no documented public REST API key scheme.
+docs: https://docs.macro.com/AI/mcp/overview.md
+schemes:
+- id: mcp_oauth
+  type: oauth2
+  flow: authorization_code
+  interaction: browser
+  applies_to: https://mcp-server.macro.com/mcp
+  description: >-
+    Authentication happens through Macro's OAuth flow when the MCP client connects.
+    The user logs in via the browser during the initial connection. MCP access is
+    available on all plans including free.
+connected_accounts:
+- provider: Gmail
+  purpose: Email sync (keyboard-driven email with Gmail sync)
+  docs: https://docs.macro.com/product/email.md
+- provider: GitHub
+  purpose: Link pull requests to tasks; third-party OAuth approval required
+  docs: https://docs.macro.com/integrations/github.md
+notes: >-
+  Macro is an end-user workspace application (desktop/iOS/web) rather than a developer
+  API platform; the primary agent-facing authenticated entry point is the MCP server.

@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.macro.com/changelog/introduction.md
+name: Macro Lifecycle
+type: Lifecycle
+description: >-
+  Versioning and release lifecycle for Macro. Macro ships a continuously-updated
+  hosted product (desktop/iOS/web) with near-daily calendar-versioned releases published
+  as public GitHub Releases.
+versioning:
+  scheme: calver
+  format: vYYYY.M.D.patch
+  current: v2026.6.9.0
+  source: https://github.com/macro-inc/macro/releases
+release_notes:
+  url: https://docs.macro.com/changelog/introduction.md
+  cadence: near-daily, grouped by month
+open_source:
+  license: AGPL-3.0
+  since: '2026-05-31'
+  repo: https://github.com/macro-inc/macro
+deprecation:
+  policy_documented: false
+  notes: No formal deprecation/sunset policy or Sunset/Deprecation header usage documented.
+status_page:
+  found: false
+  notes: No public status page (status.macro.com) discovered during enrichment.
+sla:
+  documented: false

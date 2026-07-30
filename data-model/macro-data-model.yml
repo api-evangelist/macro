@@ -1,0 +1,84 @@
+generated: '2026-07-20'
+method: derived
+source: docs.macro.com concepts + product reference (blocks, mentions, properties, entities)
+name: Macro Data Model
+type: DataModel
+description: >-
+  Entity-relationship view of the Macro workspace derived from its published concepts
+  (Blocks, Mentions, Properties) and product/MCP entity surface (ListEntities,
+  GetEntityProperties). Everything in Macro is a block in one shared database, linked
+  by @mentions and annotated with shared Properties.
+core_primitives:
+- name: Block
+  description: Core unit; every surface (docs, tasks, emails, CRM) composes from blocks.
+  source: https://docs.macro.com/concepts/blocks.md
+- name: Mention
+  description: The @mention primitive that links any block to any other across markdown surfaces; drives permissions.
+  source: https://docs.macro.com/concepts/mentions.md
+- name: Property
+  description: Structured fields attached to documents, tasks, emails and CRM records via one shared system.
+  source: https://docs.macro.com/concepts/properties.md
+entities:
+- name: Document
+  source: https://docs.macro.com/product/docs.md
+- name: Task
+  source: https://docs.macro.com/product/tasks.md
+- name: Email
+  source: https://docs.macro.com/product/email.md
+- name: Thread
+  source: https://docs.macro.com/AI/mcp/tools/get-thread.md
+- name: Channel
+  source: https://docs.macro.com/product/channels.md
+- name: Call
+  source: https://docs.macro.com/product/calls.md
+- name: Contact
+  source: https://docs.macro.com/product/crm.md
+- name: Company
+  source: https://docs.macro.com/product/crm.md
+- name: Folder
+  source: https://docs.macro.com/product/folders.md
+- name: Canvas
+  source: https://docs.macro.com/product/canvas.md
+- name: Memory
+  source: https://docs.macro.com/product/unified-memory.md
+relationships:
+- from: Task
+  type: belongs_to
+  to: Channel
+  via: channel membership (permissions derive from channel)
+- from: Task
+  type: has_many
+  to: Mention
+  via: linked context / GitHub pull request links
+- from: Email
+  type: has_one
+  to: Contact
+  via: CRM records built automatically from team email
+- from: Contact
+  type: belongs_to
+  to: Company
+  via: crm association
+- from: Document
+  type: has_many
+  to: Block
+  via: composition
+- from: Block
+  type: has_many
+  to: Mention
+  via: '@mention references'
+- from: Channel
+  type: has_many
+  to: Thread
+  via: conversation grouping
+- from: Call
+  type: has_many
+  to: Task
+  via: action items extracted from transcripts
+- from: Any
+  type: has_many
+  to: Property
+  via: shared properties system
+notes: >-
+  Macro exposes no public REST object schema; the published api-reference OpenAPI is a
+  Mintlify placeholder (Plant Store), so this model is derived from concept/product docs
+  and the MCP entity tools rather than a spec.

@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.macro.com/faq.md
+name: Macro Conformance & Compliance
+type: Conformance
+description: >-
+  Cross-cutting standards and compliance posture asserted by Macro, drawn from the
+  public FAQ, homepage and MCP documentation. Absence of a claim is recorded as such.
+docs: https://docs.macro.com/faq.md
+standards:
+- id: soc2-type-ii
+  conforms: true
+  evidence: >-
+    Macro states it maintains a SOC 2 Type II audit (homepage + FAQ). Runs on AWS
+    infrastructure.
+  source: https://docs.macro.com/faq.md
+- id: oauth2
+  conforms: true
+  evidence: MCP server authenticates via Macro's OAuth flow (browser sign-in).
+  source: https://docs.macro.com/AI/mcp/overview.md
+- id: mcp
+  conforms: true
+  evidence: Official hosted Model Context Protocol server at mcp-server.macro.com/mcp.
+  source: https://docs.macro.com/AI/mcp/overview.md
+- id: hipaa
+  conforms: false
+  evidence: >-
+    Not offered by default; FAQ directs organizations with HIPAA/FedRAMP needs to
+    contact self-host@macro.com for compliance arrangements.
+  source: https://docs.macro.com/faq.md
+- id: fedramp
+  conforms: false
+  evidence: Same as HIPAA — handled via self-hosting/compliance contact, not default.
+  source: https://docs.macro.com/faq.md
+licensing:
+  open_source: true
+  license: AGPL-3.0
+  since: '2026-05-31'
+  repo: https://github.com/macro-inc/macro
+  commercial_license_contact: licensing@macro.com

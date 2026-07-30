@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: generated
+source: https://docs.macro.com/AI/recipes.md
+name: Macro Agent Skills
+type: AgentSkill
+description: >-
+  Packaged Agent Skills for Macro, mirroring published agent recipes and grounded in
+  real Macro MCP server tools (mcp-server.macro.com/mcp).
+mcp_server: https://mcp-server.macro.com/mcp
+skills:
+- file: macro-daily-inbox-brief.md
+  name: macro-daily-inbox-brief
+  summary: Triage the unified inbox into needs-reply / FYI / waiting-on-others.
+- file: macro-call-transcript-to-tasks.md
+  name: macro-call-transcript-to-tasks
+  summary: Convert a call transcript into assigned tasks, one per action item.

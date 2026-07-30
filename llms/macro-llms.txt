@@ -1,0 +1,63 @@
+# Macro
+
+> Product and technical documentation for Macro, the unified interface for email, messages, tasks, calls, agents, pull requests, docs, CRM — linked together with shared AI memory.
+
+## Docs
+
+- [MCP Setup](https://docs.macro.com/AI/mcp/overview.md): Connect AI clients to the Macro MCP server.
+- [bash_code_execution](https://docs.macro.com/AI/mcp/tools/bash-code-execution.md): Generated from the Macro Rust tool registry.
+- [ContentSearch](https://docs.macro.com/AI/mcp/tools/content-search.md): Generated from the Macro Rust tool registry.
+- [CreateDocument](https://docs.macro.com/AI/mcp/tools/create-document.md): Generated from the Macro Rust tool registry.
+- [GetEntityProperties](https://docs.macro.com/AI/mcp/tools/get-entity-properties.md): Generated from the Macro Rust tool registry.
+- [GetThread](https://docs.macro.com/AI/mcp/tools/get-thread.md): Generated from the Macro Rust tool registry.
+- [Tool Reference](https://docs.macro.com/AI/mcp/tools/index.md): Generated reference pages for Macro MCP tools.
+- [ListEntities](https://docs.macro.com/AI/mcp/tools/list-entities.md): Generated from the Macro Rust tool registry.
+- [NameSearch](https://docs.macro.com/AI/mcp/tools/name-search.md): Generated from the Macro Rust tool registry.
+- [ReadContent](https://docs.macro.com/AI/mcp/tools/read-content.md): Generated from the Macro Rust tool registry.
+- [ReadMetadata](https://docs.macro.com/AI/mcp/tools/read-metadata.md): Generated from the Macro Rust tool registry.
+- [ReadThread](https://docs.macro.com/AI/mcp/tools/read-thread.md): Generated from the Macro Rust tool registry.
+- [SendEmail](https://docs.macro.com/AI/mcp/tools/send-email.md): Generated from the Macro Rust tool registry.
+- [SetEntityProperty](https://docs.macro.com/AI/mcp/tools/set-entity-property.md): Generated from the Macro Rust tool registry.
+- [text_editor_code_execution](https://docs.macro.com/AI/mcp/tools/text-editor-code-execution.md): Generated from the Macro Rust tool registry.
+- [UpdateThreadLabels](https://docs.macro.com/AI/mcp/tools/update-thread-labels.md): Generated from the Macro Rust tool registry.
+- [web_fetch](https://docs.macro.com/AI/mcp/tools/web-fetch.md): Generated from the Macro Rust tool registry.
+- [web_search](https://docs.macro.com/AI/mcp/tools/web-search.md): Generated from the Macro Rust tool registry.
+- [Agent recipes](https://docs.macro.com/AI/recipes.md): Copy-paste prompts for the most useful things agents can do in your Macro workspace.
+- [Billing & Plans](https://docs.macro.com/account/billing.md): Macro's free and premium plans, and how to manage your subscription.
+- [Teams & Admin](https://docs.macro.com/account/teams.md): Creating a team, inviting members, roles, and what admins can do.
+- [Get the App](https://docs.macro.com/apps.md)
+- [December 2025](https://docs.macro.com/changelog/2025-12.md): Macro releases from December 2025.
+- [January 2026](https://docs.macro.com/changelog/2026-01.md): Macro releases from January 2026.
+- [February 2026](https://docs.macro.com/changelog/2026-02.md): Macro releases from February 2026.
+- [March 2026](https://docs.macro.com/changelog/2026-03.md): Macro releases from March 2026.
+- [April 2026](https://docs.macro.com/changelog/2026-04.md): Macro releases from April 2026.
+- [May 2026](https://docs.macro.com/changelog/2026-05.md): Macro releases from May 2026.
+- [Changelog](https://docs.macro.com/changelog/introduction.md): All notable changes to Macro, pulled from GitHub Releases.
+- [Blocks](https://docs.macro.com/concepts/blocks.md): Blocks are at the core of Macro's philosophy. They are designed to work together like legos.
+- [Mentions](https://docs.macro.com/concepts/mentions.md): How blocks reference each other and how permissions are handled. The @mention primitive that works across every markdown surface in Macro.
+- [Properties](https://docs.macro.com/concepts/properties.md): Attach structured fields to documents, tasks, emails, and CRM records with one shared system.
+- [FAQ](https://docs.macro.com/faq.md): How Macro compares to Notion, Superhuman, and Slack, plus licensing, self-hosting, teams, and data questions.
+- [Get Started](https://docs.macro.com/getting-started.md): Set up Macro and learn the core workflow in about 15 minutes.
+- [Welcome to Macro](https://docs.macro.com/index.md): Extremely fast, unified interface for all your work, all linked together in one database.
+- [GitHub](https://docs.macro.com/integrations/github.md): Link pull requests to tasks and let task statuses update themselves as you ship.
+- [Keyboard Shortcuts](https://docs.macro.com/keyboard-shortcuts.md): The complete reference for driving Macro from the keyboard.
+- [Permissions](https://docs.macro.com/permissions.md): Channel-based sharing: access comes from channel membership instead of per-file dialogs.
+- [Agents](https://docs.macro.com/product/agents.md): Use agents to summarize your workspace, check up on people's progress and create tasks, emails, or documents.
+- [Calls](https://docs.macro.com/product/calls.md)
+- [Canvas](https://docs.macro.com/product/canvas.md): An infinite 2D board where sketches, shapes, and live blocks from your workspace sit side by side.
+- [Channels](https://docs.macro.com/product/channels.md): Channels are where you and your team collaborate. They serve as the main hub of communication between you and others.
+- [CRM](https://docs.macro.com/product/crm.md): Contact and company records built automatically from your team's email.
+- [Documents](https://docs.macro.com/product/docs.md): Markdown-native, fast, collaborative, and @linked documents.
+- [Email](https://docs.macro.com/product/email.md): Keyboard-driven email with Gmail sync.
+- [Folders](https://docs.macro.com/product/folders.md): Store and share files across your workspace.
+- [Unified Inbox](https://docs.macro.com/product/inbox.md): All your email accounts, messages, and @mentions in a single inbox.
+- [Unified Search](https://docs.macro.com/product/search.md): Macro's unified search makes it possible to find anything in <50ms across email, tasks, docs, calls transcripts, agents, and files.
+- [Snippets](https://docs.macro.com/product/snippets.md): Reusable text you can insert anywhere by typing ;
+- [Tasks](https://docs.macro.com/product/tasks.md): Track work with priorities, statuses, and linked context.
+- [Unified Memory](https://docs.macro.com/product/unified-memory.md): Personal and team-level memory across mail, messages, tasks, docs and connectors.
+- [Get Support](https://docs.macro.com/support.md): How to get help with Macro, and fixes for the most common issues.
+- [Switch to Macro](https://docs.macro.com/switch-to-macro.md): Migration guides for moving to Macro from Superhuman, Notion, Slack, Linear, and ClickUp.
+
+## OpenAPI Specs
+
+- [openapi](https://docs.macro.com/api-reference/openapi.json)
