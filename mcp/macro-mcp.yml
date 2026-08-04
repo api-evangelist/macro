@@ -3,7 +3,8 @@ method: searched
 source: https://docs.macro.com/AI/mcp/overview.md
 name: Macro MCP Server
 type: MCPServer
-status: official
+status: published
+status_raw: official
 description: >-
   Official hosted (remote) MCP server for Macro, the unified interface for email,
   messages, tasks, calls, agents, pull requests, docs and CRM linked together with
