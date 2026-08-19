@@ -5,31 +5,24 @@ name: Macro MCP Server
 type: MCPServer
 status: published
 status_raw: official
-description: >-
-  Official hosted (remote) MCP server for Macro, the unified interface for email,
-  messages, tasks, calls, agents, pull requests, docs and CRM linked together with
-  shared AI memory. Lets AI clients read and act across a connected Macro workspace.
+description: Official hosted (remote) MCP server for Macro, the unified interface for email, messages,
+  tasks, calls, agents, pull requests, docs and CRM linked together with shared AI memory. Lets AI clients
+  read and act across a connected Macro workspace.
 endpoint: https://mcp-server.macro.com/mcp
 transport: http
 authentication:
   type: oauth2
   flow: browser
-  notes: >-
-    Authentication happens through Macro's OAuth flow when the client connects; the
-    user completes a browser sign-in during the initial connection. MCP access is
-    included on all Macro plans, including the free plan.
+  notes: Authentication happens through Macro's OAuth flow when the client connects; the user completes
+    a browser sign-in during the initial connection. MCP access is included on all Macro plans, including
+    the free plan.
 docs: https://docs.macro.com/AI/mcp/overview.md
 tool_reference: https://docs.macro.com/AI/mcp/tools/index.md
 install:
   claude_code: claude mcp add --transport http macro https://mcp-server.macro.com/mcp
   codex_cli: codex mcp add macro --url https://mcp-server.macro.com/mcp
-  json_config: |
-    {
-      "macro": {
-        "type": "http",
-        "url": "https://mcp-server.macro.com/mcp"
-      }
-    }
+  json_config: "{\n  \"macro\": {\n    \"type\": \"http\",\n    \"url\": \"https://mcp-server.macro.com/mcp\"\
+    \n  }\n}\n"
 tools:
 - name: ContentSearch
   docs: https://docs.macro.com/AI/mcp/tools/content-search.md
@@ -63,3 +56,10 @@ tools:
   docs: https://docs.macro.com/AI/mcp/tools/bash-code-execution.md
 - name: text_editor_code_execution
   docs: https://docs.macro.com/AI/mcp/tools/text-editor-code-execution.md
+deployment:
+  mode: remote
+  endpoint: https://mcp-server.macro.com/mcp
+  verified: probed
+  probe: wall
+  checked: '2026-08-12'
+  source: catalog MCP census
