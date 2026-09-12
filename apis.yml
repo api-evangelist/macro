@@ -89,6 +89,8 @@ apis:
   - type: DataModel
     url: data-model/macro-data-model.yml
 common:
+- type: Website
+  url: https://www.macro.com/
 - type: DomainSecurity
   url: security/macro-domain-security.yml
 - type: DeveloperPortal
