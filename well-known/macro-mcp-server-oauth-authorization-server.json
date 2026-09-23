@@ -1,0 +1,1 @@
+{"issuer":"https://mcp-server.macro.com","authorization_endpoint":"https://mcp-server.macro.com/authorize","token_endpoint":"https://mcp-server.macro.com/token","registration_endpoint":"https://mcp-server.macro.com/register","response_types_supported":["code"],"grant_types_supported":["authorization_code","refresh_token"],"code_challenge_methods_supported":["S256"]}
