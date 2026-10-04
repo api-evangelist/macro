@@ -1,30 +1,28 @@
-# Kin Score artifact — macro — 2026-08-29T230545
+# Kin Score artifact — macro — 2026-09-22T213221
 # The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
 ---
 kin_score:
   slug: macro
-  schema_version: 0.16.0
-  scored_at: '2026-08-29'
-  run_ts: 2026-08-29T230545
+  schema_version: 0.22.0
+  scored_at: '2026-09-22'
+  run_ts: 2026-09-22T213221
   composite: 28.7
   band: thin
   facets:
     discoverability: 75.9
     contract_quality: 0.0
-    governance: 18.2
+    contract_governance: 18.2
     operational_transparency: 18.4
     developer_ergonomics: 56.5
-    commercial_clarity: 26.3
-    contract_governance: 18.2
     access_clarity: 26.3
   agent_readiness:
-    score: 6.9
+    score: 12.1
     band: agent-aware
     dimensions:
       spec_presence: false
       agentic_access: false
       reversibility_documented: false
-      mcp_server: documented
+      mcp_server: verified
       auth_clarity: bearer
       idempotency: false
       error_semantics: false

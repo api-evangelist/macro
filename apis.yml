@@ -41,6 +41,10 @@ image: https://avatars.githubusercontent.com/u/65687018?v=4
 specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
+x-docs-platform: mintlify
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
+x-docs-hosting: vercel
 tags:
 - Company
 - Productivity
@@ -51,7 +55,7 @@ tags:
 - Task
 - AI Agents
 - MCP
-- Open-Source
+- Open Source
 tags_raw:
 - Company
 - Productivity
@@ -63,6 +67,7 @@ tags_raw:
 - AI Agents
 - MCP
 - Open Source
+- Open-Source
 apis:
 - name: Macro MCP Server
   description: >-
