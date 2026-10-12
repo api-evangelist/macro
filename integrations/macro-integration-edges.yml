@@ -1,0 +1,48 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://monid.ai/tools/macro
+checked:
+- https://composio.dev/toolkits/macro
+- https://monid.ai/tools/macro
+- https://n8n.io/integrations/macro/
+- https://zapier.com/apps/macro/integrations
+summary: null
+marketplace_apps:
+- marketplace: monid
+  channel: agent-gateway
+  app: macro
+  url: https://monid.ai/tools/macro
+  identity: slug
+edges:
+- partner_name: zoho
+  partner: zoho
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/zoho/blob/main/openapi/zoho-timeline-api-openapi.yml
+  contract_reference:
+    repo: zoho
+    spec_file: zoho-timeline-api-openapi.yml
+    value: macro
+    property: __timeline.source
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+- partner_name: zoho-crm
+  partner: zoho-crm
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/zoho-crm/blob/main/openapi/zoho-crm-timeline-api-openapi.yml
+  contract_reference:
+    repo: zoho-crm
+    spec_file: zoho-crm-timeline-api-openapi.yml
+    value: macro
+    property: __timeline.source
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+templates: []
