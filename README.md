@@ -64,6 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Macro is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Macro is an all-in-one, keyboard-first work operating system that unifies email, team messages, documents, tasks, calls, agents, GitHub pull requests and CRM into a single fast database, linked together by @mentions and a shared AI memory. Backed by a16z and built in the open (AGPLv3, github.com/macro-inc/macro), Macro runs on AWS, is SOC 2 Type II audited, and exposes an official hosted Model Context Protocol (MCP) server so AI clients can search, read and act across a connected workspace.
 
-Backed by: a16z
+**Areas:** Company · Productivity · Email · Collaboration · Workspace · CRM · Task · AI Agents · MCP · Open Source
+
+## Macro on APIs.io
+
+Everything profiled for Macro is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/macro/](https://apis.io/providers/macro/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Macro MCP Server](https://apis.io/apis/macro/macro-mcp-server/) — Official hosted (remote) Model Context Protocol server for Macro. Connects AI clients over OAuth to search, read and act across a Macro workspace — email,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Macro MCP Server](https://apis.io/servers/macro/macro-mcp-server/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Macro Authentication](https://apis.io/security/macro/macro-authentication/)
+- [Macro Domain Security](https://apis.io/security/macro/macro-domain-security/)
+- [Macro Trust Center](https://apis.io/security/macro/macro-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.macro.com/)
+- [Documentation](https://docs.macro.com)
+- [Getting started](https://docs.macro.com/getting-started.md)
+- [API reference](https://docs.macro.com/AI/mcp/tools/index.md)
+- [Pricing](https://docs.macro.com/account/billing.md)
+- [Support](https://docs.macro.com/support.md)
+- [GitHub](https://github.com/macro-inc)
+
+## API Evangelist rating
+
+**Kin Score 29.6** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 56.5 |
+| Access clarity | 26.3 |
+
+**Agent readiness 28.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/macro/](https://apis.io/providers/macro/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Macro: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/macro/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
